@@ -16,6 +16,8 @@ public class Neighbour {
     /** Avatar */
     private String avatarUrl;
 
+    private boolean favorite;
+
     /**
      * Constructor
      * @param id
@@ -63,5 +65,13 @@ public class Neighbour {
     @Override
     public int hashCode() {
         return Objects.hash(id);
+    }
+
+    public void setFavorite(boolean tfFavorite) {
+        this.favorite = favorite;
+    }
+
+    public boolean isFavorite() {
+        return favorite;
     }
 }

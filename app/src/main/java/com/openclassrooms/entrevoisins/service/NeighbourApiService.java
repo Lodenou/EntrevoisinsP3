@@ -21,4 +21,19 @@ public interface NeighbourApiService {
      * @param neighbour
      */
     void deleteNeighbour(Neighbour neighbour);
+
+    /**
+     * Get favorites neighbours' list
+     */
+    List<Neighbour> getFavoriteNeighbours();
+
+    /**
+     * Set favorites neighbours
+     */
+
+    void setFavoriteNeighbours(int position, boolean tfFavorite);
+
+    Neighbour getNeighbourById(Integer id);
 }
+
+
