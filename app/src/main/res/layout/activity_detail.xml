@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/detail_activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -24,6 +26,16 @@
             app:expandedTitleMarginStart="48dp"
             app:title="">
 
+            <ImageView
+                android:id="@+id/toolbarImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:fitsSystemWindows="true"
+                android:src="@color/trans"
+                app:layout_collapseMode="parallax" />
+
+
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
@@ -32,14 +44,7 @@
                 app:layout_collapseMode="pin"
                 />
 
-            <ImageView
-                android:id="@+id/toolbarImage"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:fitsSystemWindows="true"
-                android:src="@color/colorPrimary"
-                app:layout_collapseMode="parallax" />
+
 
             <TextView
                 android:id="@+id/textView_detail_title"
@@ -108,8 +113,9 @@
                     android:tint="#FF80AB"
                     android:src="@drawable/ic_user_net_adress"/>
 
+                <!--android:id="@+id/textView_detail_address"-->
                 <TextView
-                    android:id="@+id/textView_detail_address"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
@@ -117,7 +123,7 @@
                     android:layout_alignTop="@id/ic_location"
                     android:textColor="@android:color/darker_gray"
                     android:textSize="16sp"
-                    tools:text="Adress"/>
+                    android:text="@string/adress"/>
 
                 <TextView
                     android:id="@+id/textView_detail_phone"
@@ -128,7 +134,7 @@
                     android:layout_alignTop="@id/ic_phone"
                     android:textColor="@android:color/darker_gray"
                     android:textSize="16sp"
-                    tools:text="06 25 25 25 25"/>
+                    android:text="@string/_06_25_25_25_25"/>
 
                 <TextView
                     android:id="@+id/textView_detail_network"
@@ -139,7 +145,7 @@
                     android:layout_alignTop="@id/ic_network"
                     android:textColor="@android:color/darker_gray"
                     android:textSize="16sp"
-                    tools:text="Website"/>
+                    android:text="@string/website"/>
 
             </RelativeLayout>
 
@@ -180,7 +186,7 @@
         app:elevation="6dp"
         app:pressedTranslationZ="12dp"
         android:layout_margin="16dp"
-        android:src="@drawable/ic_star_yellow"
+        android:src="@drawable/ic_star_borderblack"
         android:backgroundTint="@android:color/background_light"
         app:layout_anchorGravity="bottom|right|end"/>
 

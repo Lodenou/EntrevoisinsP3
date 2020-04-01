@@ -22,10 +22,13 @@ public interface NeighbourApiService {
      */
     void deleteNeighbour(Neighbour neighbour);
 
+
+    void addNeighbour (Neighbour neighbour);
+
     /**
      * Get favorites neighbours' list
      */
-    List<Neighbour> getFavoriteNeighbours();
+     List<Neighbour> getFavorites();
 
     /**
      * Set favorites neighbours
@@ -34,6 +37,13 @@ public interface NeighbourApiService {
     void setFavoriteNeighbours(int position, boolean tfFavorite);
 
     Neighbour getNeighbourById(Integer id);
+
+
+    void addFavorites(Neighbour neighbour);
+
+    void deleteFavorite(Neighbour neighbour);
+
+    // Neighbour generateOneNeighbour(Neighbour neighbour);
 }
 
 

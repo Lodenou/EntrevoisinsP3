@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 
 import com.openclassrooms.entrevoisins.R;
 import com.openclassrooms.entrevoisins.di.DI;
+
 import com.openclassrooms.entrevoisins.events.DeleteNeighbourEvent;
 import com.openclassrooms.entrevoisins.model.Neighbour;
 import com.openclassrooms.entrevoisins.service.NeighbourApiService;
@@ -19,7 +20,9 @@ import com.openclassrooms.entrevoisins.service.NeighbourApiService;
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 
+
 import java.util.List;
+
 
 
 public class NeighbourFragment extends Fragment {
@@ -27,6 +30,7 @@ public class NeighbourFragment extends Fragment {
     private NeighbourApiService mApiService;
     private List<Neighbour> mNeighbours;
     private RecyclerView mRecyclerView;
+    private Neighbour mNeighbour;
 
 
     /**
@@ -85,6 +89,15 @@ public class NeighbourFragment extends Fragment {
         mApiService.deleteNeighbour(event.neighbour);
         initList();
     }
+    //FIXME NE MARCHE PAS
+    //@Subscribe
+    //public void onAddNeighbour(Neighbour neighbour) {
+
+      // mApiService.addNeighbour(mNeighbour);
+       //initList();
+       //mRecyclerView.getAdapter().notifyDataSetChanged();
+
+      // }
 
 
 }
