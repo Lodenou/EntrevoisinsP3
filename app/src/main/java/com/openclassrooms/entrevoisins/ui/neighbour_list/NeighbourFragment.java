@@ -89,15 +89,7 @@ public class NeighbourFragment extends Fragment {
         mApiService.deleteNeighbour(event.neighbour);
         initList();
     }
-    //FIXME NE MARCHE PAS
-    //@Subscribe
-    //public void onAddNeighbour(Neighbour neighbour) {
 
-      // mApiService.addNeighbour(mNeighbour);
-       //initList();
-       //mRecyclerView.getAdapter().notifyDataSetChanged();
-
-      // }
 
 
 }
