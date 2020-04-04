@@ -30,6 +30,7 @@ import static org.junit.Assert.assertTrue;
 public class NeighbourServiceTest {
 
     private NeighbourApiService service;
+
     private Neighbour mNeighbour;
 
     @Before
@@ -54,7 +55,7 @@ public class NeighbourServiceTest {
 
    
     @Test
-    // Lors ce que l'on clique sur un utilisateur, cela ouvre bien le détail de ce neighbour
+    // Lorsque l'on clique sur un utilisateur, cela ouvre bien le détail de ce neighbour
     public void getDetailWithSuccess() {
         Neighbour neighbour = service.getNeighbours().get(0);
         assertNotNull(neighbour.getId());
@@ -62,13 +63,11 @@ public class NeighbourServiceTest {
         assertNotNull(neighbour.getName());
 
     }
-
-
     @Test
     // Supprime bien un neighbour qui était dans la liste des favoris
     public void deleteFavoriteNeighbourWithSuccess() {
 
-        service.setFavoriteNeighbours(0, true);
+        service.setFavoriteNeighbours(0 , true);
         Neighbour favoriteNeighbourToDelete = service.getNeighbours().get(0);
         service.deleteFavorite(favoriteNeighbourToDelete);
         assertFalse(service.getFavorites().contains(favoriteNeighbourToDelete));
@@ -77,7 +76,7 @@ public class NeighbourServiceTest {
     @Test
     // Test vérifiant qu'il n'y a que des favoris dans l'onglet favoris
     public void onlyFavoritesInFavorite() {
-       // service.setFavoriteNeighbours(0, true);
+
         Neighbour neighbour = service.getNeighbours().get(0);
         assertFalse(service.getFavorites().contains(!(neighbour.isFavorite())));
 
@@ -88,7 +87,7 @@ public class NeighbourServiceTest {
     public void addNeighbourWithSuccess() {
         int x = 0;
         List<Neighbour> neighbours1 = service.getNeighbours();
-        x = x+neighbours1.size();
+        x = neighbours1.size();
         service.addNeighbour(mNeighbour);
 
         assertTrue(neighbours1.size() == x+1);

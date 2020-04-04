@@ -10,11 +10,8 @@ import android.view.ViewGroup;
 import com.openclassrooms.entrevoisins.R;
 import com.openclassrooms.entrevoisins.di.DI;
 import com.openclassrooms.entrevoisins.events.DeleteFavoriteNeighbour;
-import com.openclassrooms.entrevoisins.events.DeleteNeighbourEvent;
 import com.openclassrooms.entrevoisins.model.Neighbour;
-import com.openclassrooms.entrevoisins.service.DummyNeighbourApiService;
 import com.openclassrooms.entrevoisins.service.NeighbourApiService;
-import com.openclassrooms.entrevoisins.ui.neighbour_list.MyNeighbourRecyclerViewAdapter;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -64,14 +61,16 @@ public class FavoriteNeighbourFragment extends Fragment {
 
 
 
-
+    // initialisation
     private void initList()
     {
+
         this.mFavoriteNeighbours = mApiService.getFavorites();
+
         mRecyclerView.setAdapter(new MyFavoriteNeighbourRecyclerViewAdapter(mFavoriteNeighbours));
 
     }
-
+    // appelée lorsque l'event est posté
     @Subscribe
     public void onDeleteFavorite(DeleteFavoriteNeighbour event) {
         mApiService.deleteFavorite(event.favoriteNeighbour);

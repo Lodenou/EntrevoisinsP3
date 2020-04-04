@@ -54,7 +54,7 @@ public class ListNeighbourActivity extends AppCompatActivity {
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(mTabLayout));
         mTabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
 
-
+        // Lorsque l'on clique sur le bouton add neighbour , ajoute un neighbour
         mFabaAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

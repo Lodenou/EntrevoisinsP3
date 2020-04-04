@@ -116,7 +116,7 @@ public class NeighboursListTest {
     }
 
     @Test
-    //FIXME ne marche pas, ne confirme rien
+
     //L'écran détail du neighbour s'affiche lors ce que l'on clique sur un neighbour dans la liste
     public void DetailScreenWork() {
 
@@ -144,6 +144,7 @@ public class NeighboursListTest {
 
     }
 
+    // Quelques changements pour que UserNameInDetailIsOk marche
     public class ToolbatMatcher <T extends Toolbar> extends TypeSafeMatcher <T> {
 
         private String expextedTitle;

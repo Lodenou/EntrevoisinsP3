@@ -15,6 +15,7 @@ import com.bumptech.glide.request.RequestOptions;
 import com.openclassrooms.entrevoisins.R;
 import com.openclassrooms.entrevoisins.di.DI;
 
+import com.openclassrooms.entrevoisins.events.DeleteFavoriteNeighbour;
 import com.openclassrooms.entrevoisins.events.DeleteNeighbourEvent;
 import com.openclassrooms.entrevoisins.model.Neighbour;
 import com.openclassrooms.entrevoisins.service.NeighbourApiService;
@@ -52,6 +53,8 @@ public class MyNeighbourRecyclerViewAdapter extends RecyclerView.Adapter<MyNeigh
                 .load(neighbour.getAvatarUrl())
                 .apply(RequestOptions.circleCropTransform())
                 .into(holder.mNeighbourAvatar);
+
+        // Lorsque l'on clique sur un neighbour de la liste, on ouvre l'activité de détail liée à ce neighbour
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,6 +68,8 @@ public class MyNeighbourRecyclerViewAdapter extends RecyclerView.Adapter<MyNeigh
             @Override
             public void onClick(View v) {
                 EventBus.getDefault().post(new DeleteNeighbourEvent(neighbour));
+                // On ajoute l'event de delete favoris pour résoudre le bug qui faisait qu'un neighbour delete était encore en favoris
+                EventBus.getDefault().post(new DeleteFavoriteNeighbour(neighbour));
 
                 }
 

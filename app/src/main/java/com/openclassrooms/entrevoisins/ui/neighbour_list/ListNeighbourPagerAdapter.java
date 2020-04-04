@@ -18,6 +18,9 @@ public class ListNeighbourPagerAdapter extends FragmentPagerAdapter {
      * @param position
      * @return
      */
+
+
+    // Ajout du fragment favorite neighbour
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
@@ -32,6 +35,7 @@ public class ListNeighbourPagerAdapter extends FragmentPagerAdapter {
      * get the number of pages
      * @return
      */
+    // ajout d'une page
     @Override
     public int getCount() {
         return 2;
