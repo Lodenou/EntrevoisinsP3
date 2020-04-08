@@ -65,18 +65,18 @@ public class DetailActivity extends AppCompatActivity {
             public void onClick(View view) {
 
 
-                if (!mApiService.getFavorites().contains(mNeighbour)) {
+                if (!mNeighbour.isFavorite()) {
 
-
-                    mApiService.addFavorites(mNeighbour);
+                    //mApiService.setFavorite(mNeighbour, true);
+                    mNeighbour.setFavorite(true);
                     Snackbar.make(view, "Ajouté aux favoris", Snackbar.LENGTH_LONG)
                             .setAction("Action", null).show();
                     fab.setImageResource(R.drawable.ic_star_yellow);
 
                 } else {
 
-
-                    mApiService.deleteFavorite(mNeighbour);
+                    //mApiService.setFavorite(mNeighbour,false);
+                    mNeighbour.setFavorite(false);
                     Snackbar.make(view, "Retiré des favoris", Snackbar.LENGTH_LONG)
                             .setAction("Action", null).show();
                     fab.setImageResource(R.drawable.ic_star_borderblack);
@@ -90,7 +90,7 @@ public class DetailActivity extends AppCompatActivity {
         mNeighbour = DI.getNeighbourApiService().
 
                 getNeighbourById(id);
-        if (mApiService.getFavorites().contains(mNeighbour))
+        if (mNeighbour.isFavorite())
          {
             fab.setImageResource(R.drawable.ic_star_yellow);
         }

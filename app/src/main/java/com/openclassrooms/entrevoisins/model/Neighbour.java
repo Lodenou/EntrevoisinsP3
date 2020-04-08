@@ -68,10 +68,12 @@ public class Neighbour {
     }
 
     public void setFavorite(boolean tfFavorite) {
-        this.favorite = favorite;
+            this.favorite = tfFavorite;
     }
 
     public boolean isFavorite() {
         return favorite;
     }
+
+
 }

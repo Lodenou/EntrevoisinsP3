@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import com.openclassrooms.entrevoisins.R;
 import com.openclassrooms.entrevoisins.di.DI;
 import com.openclassrooms.entrevoisins.events.DeleteFavoriteNeighbour;
+import com.openclassrooms.entrevoisins.events.DeleteNeighbourEvent;
 import com.openclassrooms.entrevoisins.model.Neighbour;
 import com.openclassrooms.entrevoisins.service.NeighbourApiService;
 
@@ -24,11 +25,12 @@ public class FavoriteNeighbourFragment extends Fragment {
     private NeighbourApiService mApiService;
     private RecyclerView mRecyclerView;
     private MyFavoriteNeighbourRecyclerViewAdapter mAdapter;
+
     public static FavoriteNeighbourFragment newInstance() {
 
-         FavoriteNeighbourFragment favfragment = new FavoriteNeighbourFragment();
+        FavoriteNeighbourFragment favfragment = new FavoriteNeighbourFragment();
         return favfragment;
-   }
+    }
 
 
     @Override
@@ -46,6 +48,8 @@ public class FavoriteNeighbourFragment extends Fragment {
         return view;
 
     }
+
+
     @Override
     public void onStart() {
         super.onStart();
@@ -56,27 +60,24 @@ public class FavoriteNeighbourFragment extends Fragment {
     public void onStop() {
         super.onStop();
         EventBus.getDefault().unregister(this);
+
     }
 
-
-
-
     // initialisation
-    private void initList()
-    {
+    private void initList() {
 
-        this.mFavoriteNeighbours = mApiService.getFavorites();
+        this.mFavoriteNeighbours = mApiService.getNeighbours();
 
         mRecyclerView.setAdapter(new MyFavoriteNeighbourRecyclerViewAdapter(mFavoriteNeighbours));
 
     }
+
     // appelée lorsque l'event est posté
     @Subscribe
-    public void onDeleteFavorite(DeleteFavoriteNeighbour event) {
-        mApiService.deleteFavorite(event.favoriteNeighbour);
+    public void onDeleteFavorite(DeleteNeighbourEvent event) {
         mRecyclerView.getAdapter().notifyDataSetChanged();
     }
 
 
-    }
+}
 

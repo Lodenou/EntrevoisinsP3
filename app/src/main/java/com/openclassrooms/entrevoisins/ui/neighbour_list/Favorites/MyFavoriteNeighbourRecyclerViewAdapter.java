@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.openclassrooms.entrevoisins.R;
@@ -18,34 +19,43 @@ import com.openclassrooms.entrevoisins.ui.neighbour_list.MyNeighbourRecyclerView
 
 import org.greenrobot.eventbus.EventBus;
 
+import java.util.ArrayList;
 import java.util.List;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class MyFavoriteNeighbourRecyclerViewAdapter extends RecyclerView.Adapter<MyNeighbourRecyclerViewAdapter.ViewHolder>{
+public class MyFavoriteNeighbourRecyclerViewAdapter extends RecyclerView.Adapter<MyNeighbourRecyclerViewAdapter.ViewHolder> {
 
     private List<Neighbour> mfavNeighbour;
 
     private Neighbour mfavoriteNeighbour;
-    private NeighbourApiService mApiService= DI.getNeighbourApiService();
+    private NeighbourApiService mApiService = DI.getNeighbourApiService();
 
     public MyFavoriteNeighbourRecyclerViewAdapter(List<Neighbour> items) {
         mfavNeighbour = items;
     }
 
 
-
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            View view = LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.fragment_neighbour, parent, false);
-            return new ViewHolder(view);
+        View view = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.fragment_neighbour, parent, false);
+        return new ViewHolder(view);
 
     }
 
     @Override
     public void onBindViewHolder(final MyNeighbourRecyclerViewAdapter.ViewHolder holder, int position) {
-        Neighbour neighbour = mfavNeighbour.get(position);
+        List <Neighbour> favoris = new ArrayList<>();
+        for (Neighbour neighbour : mfavNeighbour) {
+            if (neighbour.isFavorite()) {
+                favoris.add(neighbour);
+            }
+
+        }
+
+        Neighbour neighbour = favoris.get(position);
 
         // Sort le nom du neighbour de la liste favoris
         holder.mNeighbourName.setText(neighbour.getName());
@@ -71,9 +81,12 @@ public class MyFavoriteNeighbourRecyclerViewAdapter extends RecyclerView.Adapter
             // supprime un favoris lors du clic sur l'icone bin de l'onglet favorites
             @Override
             public void onClick(View v) {
-                EventBus.getDefault().post(new DeleteFavoriteNeighbour(neighbour));
-
-
+                if (neighbour.isFavorite()) {
+                    neighbour.setFavorite(false);
+                } else {
+                    neighbour.setFavorite(true);
+                }
+                notifyDataSetChanged();
             }
 
 
@@ -81,12 +94,20 @@ public class MyFavoriteNeighbourRecyclerViewAdapter extends RecyclerView.Adapter
 
 
     }
-        // compte le nombre d'items dans la liste des favoris
-        @Override
-        public int getItemCount () {
-            return mfavNeighbour.size();
+
+    // compte le nombre d'items dans la liste des favoris
+    @Override
+    public int getItemCount() {
+        List <Neighbour> favoris = new ArrayList<>();
+        for (Neighbour neighbour : mfavNeighbour) {
+            if (neighbour.isFavorite()) {
+                favoris.add(neighbour);
+            }
+
         }
+        return favoris.size();
     }
+}
 
 
 

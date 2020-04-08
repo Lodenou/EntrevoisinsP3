@@ -2,7 +2,7 @@
 <html xmlns:str="http://exslt.org/strings" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Test Results &mdash; NeighbourServiceTest</title>
+<title>Test Results &mdash; NeighboursListTest</title>
 <style type="text/css">
           html {
             height: 100%
@@ -572,8 +572,8 @@ jQuery.cookie = function(name, value, options) {
 <body>
 <div id="container">
 <div id="header">
-<div class="time" xmlns="">9 ms</div>
-<h1>NeighbourServiceTest: <strong><span class="total" xmlns="http://www.w3.org/1999/xhtml">6 total, </span><span class="passed">6 passed</span></strong>
+<div class="time" xmlns="">5.22 s</div>
+<h1>NeighboursListTest: <strong><span class="total" xmlns="http://www.w3.org/1999/xhtml">5 total, </span><span class="passed">5 passed</span></strong>
 </h1>
 <div id="treecontrol">
 <ul>
@@ -588,43 +588,249 @@ jQuery.cookie = function(name, value, options) {
 </div>
 </div>
 <div id="content">
-<ul id="tree">&amp;quot;C:\Program Files\Android\Android Studio\jre\bin\java.exe&amp;quot; -ea -Didea.test.cyclic.buffer.size=1048576 &amp;quot;-javaagent:C:\Program Files\Android\Android Studio\lib\idea_rt.jar=61518:C:\Program Files\Android\Android Studio\bin&amp;quot; -Dfile.encoding=UTF-8 -classpath &amp;quot;C:\Program Files\Android\Android Studio\lib\idea_rt.jar;C:\Program Files\Android\Android Studio\plugins\junit\lib\junit-rt.jar;C:\Program Files\Android\Android Studio\plugins\junit\lib\junit5-rt.jar;C:\Users\Lou\AppData\Local\Android\Sdk\platforms\android-28\data\res;C:\Users\Lou\Desktop\Entrevoisins\app\build\intermediates\javac\debugUnitTest\classes;C:\Users\Lou\Desktop\Entrevoisins\app\build\intermediates\javac\debug\classes;C:\Users\Lou\Desktop\Entrevoisins\app\build\generated\res\resValues\androidTest\debug;C:\Users\Lou\Desktop\Entrevoisins\app\build\generated\res\resValues\debug;C:\Users\Lou\.gradle\caches\modules-2\files-2.1\junit\junit\4.12\2973d150c0dc1fefe998f834810d68f278ea58ec\junit-4.12.jar;C:\Users\Lou\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-core\1.3\42a25dc3219429f0e5d060061f71acb49bf010a0\hamcrest-core-1.3.jar;C:\Users\Lou\.gradle\caches\modules-2\files-2.1\org.hamcrest\java-hamcrest\2.0.0.0\f1c8853ade0ecf707f5a261c830e98893983813\java-hamcrest-2.0.0.0.jar;C:\Users\Lou\.gradle\caches\modules-2\files-2.1\com.android.support\collections\28.0.0\c1bcdade4d3cc2836130424a3f3e4182c666a745\collections-28.0.0.jar;C:\Users\Lou\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\9.0.0\4491662975a6e2aaf8bcd1203a60ace1179c84ee\butterknife-annotations-9.0.0.jar;C:\Users\Lou\.gradle\caches\modules-2\files-2.1\android.arch.lifecycle\common\1.1.1\207a6efae6a3555e326de41f76bdadd9a239cbce\common-1.1.1.jar;C:\Users\Lou\.gradle\caches\modules-2\files-2.1\android.arch.core\common\1.1.1\e55b70d1f5620db124b3e85a7f4bdc7bd48d9f95\common-1.1.1.jar;C:\Users\Lou\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\28.0.0\ed73f5337a002d1fd24339d5fb08c2c9d9ca60d8\support-annotations-28.0.0.jar;C:\Users\Lou\.gradle\caches\modules-2\files-2.1\com.android.support.constraint\constraint-layout-solver\1.1.3\bde0667d7414c16ed62d3cfe993cff7f9d732373\constraint-layout-solver-1.1.3.jar;C:\Users\Lou\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\disklrucache\4.9.0\cbb185635e8f265d6391c7d43118d3856574dc3a\disklrucache-4.9.0.jar;C:\Users\Lou\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\annotations\4.9.0\ccdd6bc8b4f3c001fbddec29ecddd515a13203c4\annotations-4.9.0.jar;C:\Users\Lou\.gradle\caches\modules-2\files-2.1\org.greenrobot\eventbus\3.1.1\5cd91fd014f5b72292f959748c20a2cefefae77d\eventbus-3.1.1.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\9d7250a774d78c6da773e4ce19c93e82\design-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\9d7250a774d78c6da773e4ce19c93e82\design-28.0.0\res;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\7f5f0b3369d8fa8a72a20e2278ec0acc\appcompat-v7-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\7f5f0b3369d8fa8a72a20e2278ec0acc\appcompat-v7-28.0.0\res;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\711cd693cb47fa08b9b342d9a2815457\recyclerview-v7-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\711cd693cb47fa08b9b342d9a2815457\recyclerview-v7-28.0.0\res;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\5e6c966e41283eb28599ac75ae8916f4\support-v4-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\2fc7de70363b43e4f45baea6ba964c6c\glide-4.9.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\2fc7de70363b43e4f45baea6ba964c6c\glide-4.9.0\res;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\bc3876738bdb5d8e498d8c27630d1092\support-fragment-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\c82b71cc23f1f749201c229f1e0919f8\animated-vector-drawable-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\240ad4e7c0a4c0f0ac07ba22afac43c2\support-core-ui-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\13f115cc5d5138e9ed6d7046dab5d030\support-core-utils-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\6c361ce609604c8b37cbff4112761818\support-vector-drawable-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\a191153422ddfd26478c8b99811273f5\transition-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\a191153422ddfd26478c8b99811273f5\transition-28.0.0\res;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\7ba19d4c13a915d31338854ea04490b4\support-media-compat-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\7ba19d4c13a915d31338854ea04490b4\support-media-compat-28.0.0\res;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\d33948ef7540ce5fd8e1aded1b8978c3\butterknife-9.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\0ff89af17e20fb2ae151814f68a9f5d6\butterknife-runtime-9.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\776dfa9be835a7a130740bd6b0619584\loader-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\4660acd0807cc71ba66bee2bd6cbbbe5\viewpager-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\2f9ffac3f9aa7c3da9b2ea0a60bff798\coordinatorlayout-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\2f9ffac3f9aa7c3da9b2ea0a60bff798\coordinatorlayout-28.0.0\res;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\e393f8741de26a3dcc6eeb170bd18679\drawerlayout-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\c98a9bc0a455ab0200cce6feac99fa67\slidingpanelayout-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\b82955ed32a4ee277723d8123c155ac3\customview-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\8756cea37b098f254fcf1c05271849e1\swiperefreshlayout-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\e2a5a2145c109898fc28f4778cc59fa2\asynclayoutinflater-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\b73d0db3c489aeab8b531c92b0313ef9\support-compat-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\b73d0db3c489aeab8b531c92b0313ef9\support-compat-28.0.0\res;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\b93ddaf99704c9896c23344bb8a6cc5b\versionedparcelable-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\f89186d3faa35207960141dbf97e7823\cursoradapter-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\45af0f91ec351e1a1c603d501e9b45b7\cardview-v7-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\45af0f91ec351e1a1c603d501e9b45b7\cardview-v7-28.0.0\res;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\d550f790a288d0bebcaba828d417c45b\gifdecoder-4.9.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\912d14cf8b7da59afd70a06b1ab8df17\runtime-1.1.1\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\6382b0a1555e0e71f2a2930dfe6b1d66\documentfile-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\ab60f6dd6ef13cb57d98ea7973f298c0\localbroadcastmanager-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\441dd746fc5507909e127eaa50801847\print-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\e30d9e6f3403e84c4cae532d406e4009\viewmodel-1.1.1\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\9f66af0770fd83464340388aae824c93\interpolator-28.0.0\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\855199d21a2457dffd94f776f414402b\livedata-1.1.1\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\0c580ad6917269345b415f2689381fa7\livedata-core-1.1.1\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\32c3c3c1ff1572cd4fbf4adc8b2e281b\runtime-1.1.1\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\247f998e4bdaf38a6cc6f3ef395b6cd1\constraint-layout-1.1.3\jars\classes.jar;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\247f998e4bdaf38a6cc6f3ef395b6cd1\constraint-layout-1.1.3\res;C:\Users\Lou\Desktop\Entrevoisins\app\build\intermediates\sourceFolderJavaResources\test\debug;C:\Users\Lou\Desktop\Entrevoisins\app\build\intermediates\sourceFolderJavaResources\debug;C:\Users\Lou\.gradle\caches\transforms-2\files-2.1\42652e639bbd8ba85b3c3a3c26c9402d\android.jar&amp;quot; com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 -junit4 com.openclassrooms.entrevoisins.service.NeighbourServiceTest
-Process finished with exit code 0
-<li class="level test" xmlns="">
+<ul id="tree">
+<li xmlns="" class="level top open">
 <span><em class="time">
-<div class="time">2 ms</div>
-</em><em class="status">passed</em>NeighbourServiceTest.deleteNeighbourWithSuccess</span>
+<div class="time">5.22 s</div>
+</em>com.openclassrooms.entrevoisins.neighbour_list.NeighboursListTest</span>
+<ul>
+<li class="level test">
+<span><em class="time">
+<div class="time">1.75 s</div>
+</em><em class="status">passed</em>addNeighbourList</span>
+<ul>
+<li class="text">
+<span class="stdout">Capturing and displaying logcat messages from application. This behavior can be disabled in the &quot;Logcat output&quot; section of the &quot;Debugger&quot; settings page.<br/></span>
+</li>
+<li class="text">
+<span class="stdout">I/ms.entrevoisin: Not late-enabling -Xcheck:jni (already on)<br/></span>
+</li>
+<li class="text">
+<span class="stdout">E/ms.entrevoisin: Unknown bits set in runtime_flags: 0x8000<br/></span>
+</li>
+<li class="text">
+<span class="stdout">W/ms.entrevoisin: Unexpected CPU variant for X86 using defaults: x86<br/></span>
+</li>
+<li class="text">
+<span class="stdout">I/ms.entrevoisin: The ClassLoaderContext is a special shared library.<br/>I/ms.entrevoisin: The ClassLoaderContext is a special shared library.<br/>I/ms.entrevoisin: The ClassLoaderContext is a special shared library.<br/>    The ClassLoaderContext is a special shared library.<br/></span>
+</li>
+<li class="text">
+<span class="stdout">W/ms.entrevoisin: Accessing hidden method Landroid/app/Instrumentation;-&gt;execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Landroid/app/Activity;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult; (greylist, linking, allowed)<br/>    Accessing hidden method Landroid/app/Instrumentation;-&gt;execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Ljava/lang/String;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult; (greylist, linking, allowed)<br/></span>
+</li>
+<li class="text">
+<span class="stdout">I/MonitoringInstr: Instrumentation started on process com.openclassrooms.entrevoisins<br/>I/MonitoringInstr: Setting context classloader to &#39;dalvik.system.PathClassLoader[DexPathList[[zip file &quot;/system/framework/android.test.runner.jar&quot;, zip file &quot;/system/framework/android.test.mock.jar&quot;, zip file &quot;/data/app/com.openclassrooms.entrevoisins.test-9lU8jVrFpMfsjwtYufDekg==/base.apk&quot;, zip file &quot;/data/app/com.openclassrooms.entrevoisins-BbOnXoIjokBKEAd_-8D9IA==/base.apk&quot;],nativeLibraryDirectories=[/data/app/com.openclassrooms.entrevoisins.test-9lU8jVrFpMfsjwtYufDekg==/lib/x86, /data/app/com.openclassrooms.entrevoisins-BbOnXoIjokBKEAd_-8D9IA==/lib/x86, /system/lib, /system/product/lib]]]&#39;, Original: &#39;dalvik.system.PathClassLoader[DexPathList[[zip file &quot;/system/framework/android.test.runner.jar&quot;, zip file &quot;/system/framework/android.test.mock.jar&quot;, zip file &quot;/data/app/com.openclassrooms.entrevoisins.test-9lU8jVrFpMfsjwtYufDekg==/base.apk&quot;, zip file &quot;/data/app/com.openclassrooms.entrevoisins-BbOnXoIjokBKEAd_-8D9IA==/base.apk&quot;],nativeLibraryDirectories=[/data/app/com.openclassrooms.entrevoisins.test-9lU8jVrFpMfsjwtYufDekg==/lib/x86, /data/app/com.openclassrooms.entrevoisins-BbOnXoIjokBKEAd_-8D9IA==/lib/x86, /system/lib, /system/product/lib]]]&#39;<br/>I/MonitoringInstr: No JSBridge.<br/>I/MonitoringInstr: Setting context classloader to &#39;dalvik.system.PathClassLoader[DexPathList[[zip file &quot;/system/framework/android.test.runner.jar&quot;, zip file &quot;/system/framework/android.test.mock.jar&quot;, zip file &quot;/data/app/com.openclassrooms.entrevoisins.test-9lU8jVrFpMfsjwtYufDekg==/base.apk&quot;, zip file &quot;/data/app/com.openclassrooms.entrevoisins-BbOnXoIjokBKEAd_-8D9IA==/base.apk&quot;],nativeLibraryDirectories=[/data/app/com.openclassrooms.entrevoisins.test-9lU8jVrFpMfsjwtYufDekg==/lib/x86, /data/app/com.openclassrooms.entrevoisins-BbOnXoIjokBKEAd_-8D9IA==/lib/x86, /system/lib, /system/product/lib]]]&#39;, Original: &#39;dalvik.system.PathClassLoader[DexPathList[[zip file &quot;/system/framework/android.test.runner.jar&quot;, zip file &quot;/system/framework/android.test.mock.jar&quot;, zip file &quot;/data/app/com.openclassrooms.entrevoisins.test-9lU8jVrFpMfsjwtYufDekg==/base.apk&quot;, zip file &quot;/data/app/com.openclassrooms.entrevoisins-BbOnXoIjokBKEAd_-8D9IA==/base.apk&quot;],nativeLibraryDirectories=[/data/app/com.openclassrooms.entrevoisins.test-9lU8jVrFpMfsjwtYufDekg==/lib/x86, /data/app/com.openclassrooms.entrevoisins-BbOnXoIjokBKEAd_-8D9IA==/lib/x86, /system/lib, /system/product/lib]]]&#39;<br/>I/UsageTrackerFacilitator: Usage tracking enabled<br/></span>
+</li>
+<li class="text">
+<span class="stdout">D/TestExecutor: Adding listener android.support.test.internal.runner.listener.LogRunListener<br/>D/TestExecutor: Adding listener android.support.test.internal.runner.listener.InstrumentationResultPrinter<br/>D/TestExecutor: Adding listener android.support.test.internal.runner.listener.ActivityFinisherRunListener<br/></span>
+</li>
+<li class="text">
+<span class="stdout">I/TestRunner: run started: 5 tests<br/>I/TestRunner: started: addNeighbourList(com.openclassrooms.entrevoisins.neighbour_list.NeighboursListTest)<br/>I/MonitoringInstr: Activities that are still in CREATED to STOPPED: 0<br/></span>
+</li>
+<li class="text">
+<span class="stdout">W/ActivityTestRule: getActivityIntent() returned null using default: Intent(Intent.ACTION_MAIN)<br/>W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@9b8ed63<br/></span>
+</li>
+<li class="text">
+<span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@3c2fcbf in: PRE_ON_CREATE<br/>D/libEGL: Emulator has host GPU support, qemu.gles is set to 1.<br/></span>
+</li>
+<li class="text">
+<span class="stdout">W/libc: Unable to set property &quot;qemu.gles&quot; to &quot;1&quot;: connection failed; errno=13 (Permission denied)<br/></span>
+</li>
+<li class="text">
+<span class="stdout">D/libEGL: loaded /vendor/lib/egl/libEGL_emulation.so<br/>D/libEGL: loaded /vendor/lib/egl/libGLESv1_CM_emulation.so<br/>D/libEGL: loaded /vendor/lib/egl/libGLESv2_emulation.so<br/></span>
+</li>
+<li class="text">
+<span class="stdout">W/RenderThread: type=1400 audit(0.0:305): avc: denied { write } for name=&quot;property_service&quot; dev=&quot;tmpfs&quot; ino=6757 scontext=u:r:untrusted_app_27:s0:c134,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=com.openclassrooms.entrevoisins<br/>W/ms.entrevoisin: Accessing hidden method Landroid/view/View;-&gt;computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)<br/>W/ms.entrevoisin: Accessing hidden method Landroid/view/ViewGroup;-&gt;makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)<br/></span>
+</li>
+<li class="text">
+<span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@3c2fcbf in: CREATED<br/>D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@3c2fcbf in: STARTED<br/>D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@3c2fcbf in: RESUMED<br/>D/HostConnection: HostConnection::get() New Host Connection established 0xe0038400, tid 32509<br/>D/HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_async_unmap_buffer GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_gles_max_version_3_1 <br/></span>
+</li>
+<li class="text">
+<span class="stdout">W/OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...<br/></span>
+</li>
+<li class="text">
+<span class="stdout">D/EGL_emulation: eglCreateContext: 0xebe92000: maj 3 min 1 rcv 4<br/>D/EGL_emulation: eglMakeCurrent: 0xebe92000: ver 3 1 (tinfo 0xf69c0210)<br/></span>
+</li>
+<li class="text">
+<span class="stdout">E/eglCodecCommon: glUtilsParamSize: unknow param 0x000082da<br/>    glUtilsParamSize: unknow param 0x000082da<br/></span>
+</li>
+<li class="text">
+<span class="stdout">W/Gralloc3: mapper 3.x is not supported<br/></span>
+</li>
+<li class="text">
+<span class="stdout">D/HostConnection: createUnique: call<br/>D/HostConnection: HostConnection::get() New Host Connection established 0xe003a110, tid 32509<br/>D/HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_async_unmap_buffer GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_gles_max_version_3_1 <br/>D/eglCodecCommon: allocate: Ask for block of size 0x1000<br/>    allocate: ioctl allocate returned offset 0x3ff7fd000 size 0x2000<br/>D/EGL_emulation: eglMakeCurrent: 0xebe92000: ver 3 1 (tinfo 0xf69c0210)<br/></span>
+</li>
+<li class="text">
+<span class="stdout">I/Choreographer: Skipped 32 frames!  The application may be doing too much work on its main thread.<br/></span>
+</li>
+<li class="text">
+<span class="stdout">D/InputManagerEventInjectionStrategy: Creating injection strategy with input manager.<br/></span>
+</li>
+<li class="text">
+<span class="stdout">W/ms.entrevoisin: Accessing hidden method Landroid/hardware/input/InputManager;-&gt;getInstance()Landroid/hardware/input/InputManager; (greylist, reflection, allowed)<br/>    Accessing hidden method Landroid/hardware/input/InputManager;-&gt;injectInputEvent(Landroid/view/InputEvent;I)Z (greylist, reflection, allowed)<br/>    Accessing hidden field Landroid/hardware/input/InputManager;-&gt;INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (greylist, reflection, allowed)<br/>W/ms.entrevoisin: Accessing hidden method Landroid/os/MessageQueue;-&gt;next()Landroid/os/Message; (greylist, reflection, allowed)<br/>    Accessing hidden field Landroid/os/MessageQueue;-&gt;mMessages:Landroid/os/Message; (greylist, reflection, allowed)<br/>    Accessing hidden method Landroid/os/Message;-&gt;recycleUnchecked()V (greylist, reflection, allowed)<br/>W/ms.entrevoisin: Accessing hidden method Lsun/misc/Unsafe;-&gt;getUnsafe()Lsun/misc/Unsafe; (greylist,core-platform-api, linking, allowed)<br/>    Accessing hidden method Lsun/misc/Unsafe;-&gt;objectFieldOffset(Ljava/lang/reflect/Field;)J (greylist,core-platform-api, linking, allowed)<br/>    Accessing hidden method Lsun/misc/Unsafe;-&gt;compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)<br/>    Accessing hidden method Lsun/misc/Unsafe;-&gt;putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)<br/>W/ms.entrevoisin: Accessing hidden method Landroid/view/WindowManagerGlobal;-&gt;getInstance()Landroid/view/WindowManagerGlobal; (greylist, reflection, allowed)<br/>    Accessing hidden field Landroid/view/WindowManagerGlobal;-&gt;mViews:Ljava/util/ArrayList; (greylist, reflection, allowed)<br/>    Accessing hidden field Landroid/view/WindowManagerGlobal;-&gt;mParams:Ljava/util/ArrayList; (greylist, reflection, allowed)<br/></span>
+</li>
+<li class="text">
+<span class="stdout">I/ViewInteraction: Checking &#39;com.openclassrooms.entrevoisins.utils.RecyclerViewItemCountAssertion@ea6566f&#39; assertion on view with id: com.openclassrooms.entrevoisins:id/list_neighbours<br/></span>
+</li>
+<li class="text">
+<span class="stdout">W/ms.entrevoisin: Accessing hidden method Landroid/view/ViewConfiguration;-&gt;getDoubleTapMinTime()I (greylist, reflection, allowed)<br/></span>
+</li>
+<li class="text">
+<span class="stdout">I/ViewInteraction: Performing &#39;single click&#39; action on view with id: com.openclassrooms.entrevoisins:id/fab_add<br/></span>
+</li>
+<li class="text">
+<span class="stdout">W/ms.entrevoisin: Accessing hidden method Lsun/misc/Unsafe;-&gt;compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)<br/></span>
+</li>
+<li class="text">
+<span class="stdout">I/ms.entrevoisin: Background concurrent copying GC freed 23315(2129KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 2453KB/4906KB, paused 3.585ms total 129.432ms<br/>I/ViewInteraction: Checking &#39;com.openclassrooms.entrevoisins.utils.RecyclerViewItemCountAssertion@44b89c4&#39; assertion on view with id: com.openclassrooms.entrevoisins:id/list_neighbours<br/></span>
+</li>
+<li class="text">
+<span class="stdout">W/ms.entrevoisin: Accessing hidden field Landroid/app/Activity;-&gt;mResultCode:I (greylist, reflection, allowed)<br/>    Accessing hidden field Landroid/app/Activity;-&gt;mResultData:Landroid/content/Intent; (greylist, reflection, allowed)<br/></span>
+</li>
+<li class="text">
+<span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@3c2fcbf in: PAUSED<br/>    running callback: android.support.test.rule.ActivityTestRule$LifecycleCallback@9bb90ad<br/>    callback completes: android.support.test.rule.ActivityTestRule$LifecycleCallback@9bb90ad<br/></span>
+</li>
+<li class="text">
+<span class="stdout">I/TestRunner: finished: addNeighbourList(com.openclassrooms.entrevoisins.neighbour_list.NeighboursListTest)<br/></span>
+</li>
+</ul>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">0 ms</div>
-</em><em class="status">passed</em>NeighbourServiceTest.onlyFavoritesInFavorite</span>
+<div class="time">438 ms</div>
+</em><em class="status">passed</em>myNeighboursList_shouldNotBeEmpty</span>
+<ul>
+<li class="text">
+<span class="stdout">I/TestRunner: started: myNeighboursList_shouldNotBeEmpty(com.openclassrooms.entrevoisins.neighbour_list.NeighboursListTest)<br/>I/MonitoringInstr: Activities that are still in CREATED to STOPPED: 0<br/></span>
+</li>
+<li class="text">
+<span class="stdout">W/ActivityTestRule: getActivityIntent() returned null using default: Intent(Intent.ACTION_MAIN)<br/>W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@d549f06<br/></span>
+</li>
+<li class="text">
+<span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@a1fb9c7 in: PRE_ON_CREATE<br/>D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@a1fb9c7 in: CREATED<br/>D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@a1fb9c7 in: STARTED<br/>    Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@a1fb9c7 in: RESUMED<br/>D/EGL_emulation: eglMakeCurrent: 0xebe92000: ver 3 1 (tinfo 0xf69c0210)<br/></span>
+</li>
+<li class="text">
+<span class="stdout">I/ms.entrevoisin: JIT allocated 70KB for compiled code of void android.view.View.&lt;init&gt;(android.content.Context, android.util.AttributeSet, int, int)<br/></span>
+</li>
+<li class="text">
+<span class="stdout">W/ms.entrevoisin: Accessing hidden method Lsun/misc/Unsafe;-&gt;compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)<br/></span>
+</li>
+<li class="text">
+<span class="stdout">I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=has minimum child count: &lt;1&gt;}&#39; assertion on view with id: com.openclassrooms.entrevoisins:id/list_neighbours<br/>I/TestRunner: finished: myNeighboursList_shouldNotBeEmpty(com.openclassrooms.entrevoisins.neighbour_list.NeighboursListTest)<br/></span>
+</li>
+</ul>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">0 ms</div>
-</em><em class="status">passed</em>NeighbourServiceTest.addNeighbourWithSuccess</span>
+<div class="time">568 ms</div>
+</em><em class="status">passed</em>myNeighboursList_deleteAction_shouldRemoveItem</span>
+<ul>
+<li class="text">
+<span class="stdout">I/TestRunner: started: myNeighboursList_deleteAction_shouldRemoveItem(com.openclassrooms.entrevoisins.neighbour_list.NeighboursListTest)<br/>I/MonitoringInstr: Activities that are still in CREATED to STOPPED: 0<br/></span>
+</li>
+<li class="text">
+<span class="stdout">W/ActivityTestRule: getActivityIntent() returned null using default: Intent(Intent.ACTION_MAIN)<br/>W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@703843a<br/></span>
+</li>
+<li class="text">
+<span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@da528eb in: PRE_ON_CREATE<br/>D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@da528eb in: CREATED<br/>D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@da528eb in: STARTED<br/>    Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@da528eb in: RESUMED<br/>D/EGL_emulation: eglMakeCurrent: 0xebe92000: ver 3 1 (tinfo 0xf69c0210)<br/></span>
+</li>
+<li class="text">
+<span class="stdout">W/ms.entrevoisin: Accessing hidden method Lsun/misc/Unsafe;-&gt;compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)<br/></span>
+</li>
+<li class="text">
+<span class="stdout">I/ViewInteraction: Checking &#39;com.openclassrooms.entrevoisins.utils.RecyclerViewItemCountAssertion@e6061c9&#39; assertion on view (with id: com.openclassrooms.entrevoisins:id/list_neighbours and is displayed on the screen to the user)<br/>I/ViewInteraction: Performing &#39;actionOnItemAtPosition performing ViewAction: Click on specific button on item at position: 1&#39; action on view with id: com.openclassrooms.entrevoisins:id/list_neighbours<br/></span>
+</li>
+<li class="text">
+<span class="stdout">D/EventBus: No subscribers registered for event class com.openclassrooms.entrevoisins.events.DeleteFavoriteNeighbour<br/>D/EventBus: No subscribers registered for event class org.greenrobot.eventbus.NoSubscriberEvent<br/></span>
+</li>
+<li class="text">
+<span class="stdout">I/ViewInteraction: Checking &#39;com.openclassrooms.entrevoisins.utils.RecyclerViewItemCountAssertion@d18e068&#39; assertion on view (with id: com.openclassrooms.entrevoisins:id/list_neighbours and is displayed on the screen to the user)<br/></span>
+</li>
+<li class="text">
+<span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@da528eb in: PAUSED<br/>    running callback: android.support.test.rule.ActivityTestRule$LifecycleCallback@676c81<br/>    callback completes: android.support.test.rule.ActivityTestRule$LifecycleCallback@676c81<br/></span>
+</li>
+</ul>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">0 ms</div>
-</em><em class="status">passed</em>NeighbourServiceTest.getDetailWithSuccess</span>
+<div class="time">1.22 s</div>
+</em><em class="status">passed</em>UserNameInDetailIsOk</span>
+<ul>
+<li class="text">
+<span class="stdout">I/TestRunner: started: UserNameInDetailIsOk(com.openclassrooms.entrevoisins.neighbour_list.NeighboursListTest)<br/>I/MonitoringInstr: Activities that are still in CREATED to STOPPED: 0<br/></span>
+</li>
+<li class="text">
+<span class="stdout">W/ActivityTestRule: getActivityIntent() returned null using default: Intent(Intent.ACTION_MAIN)<br/>W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@8f0befe<br/></span>
+</li>
+<li class="text">
+<span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@f26e65f in: PRE_ON_CREATE<br/>D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@f26e65f in: CREATED<br/>D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@f26e65f in: STARTED<br/>D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@f26e65f in: RESUMED<br/>D/EGL_emulation: eglMakeCurrent: 0xebe92000: ver 3 1 (tinfo 0xf69c0210)<br/></span>
+</li>
+<li class="text">
+<span class="stdout">W/ms.entrevoisin: Accessing hidden method Lsun/misc/Unsafe;-&gt;compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)<br/></span>
+</li>
+<li class="text">
+<span class="stdout">I/ViewInteraction: Performing &#39;actionOnItemAtPosition performing ViewAction: single click on item at position: 0&#39; action on view (with id: com.openclassrooms.entrevoisins:id/list_neighbours and has parent matching: with id: com.openclassrooms.entrevoisins:id/container)<br/></span>
+</li>
+<li class="text">
+<span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@f26e65f in: PAUSED<br/>    running callback: android.support.test.rule.ActivityTestRule$LifecycleCallback@646849e<br/>    callback completes: android.support.test.rule.ActivityTestRule$LifecycleCallback@646849e<br/></span>
+</li>
+<li class="text">
+<span class="stdout">W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@8a2cb7f<br/></span>
+</li>
+<li class="text">
+<span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.DetailActivity@169f395 in: PRE_ON_CREATE<br/>    running callback: android.support.test.rule.ActivityTestRule$LifecycleCallback@646849e<br/>    callback completes: android.support.test.rule.ActivityTestRule$LifecycleCallback@646849e<br/>D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.DetailActivity@169f395 in: CREATED<br/>    running callback: android.support.test.rule.ActivityTestRule$LifecycleCallback@646849e<br/>    callback completes: android.support.test.rule.ActivityTestRule$LifecycleCallback@646849e<br/>D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.DetailActivity@169f395 in: STARTED<br/>D/LifecycleMonitor: running callback: android.support.test.rule.ActivityTestRule$LifecycleCallback@646849e<br/>    callback completes: android.support.test.rule.ActivityTestRule$LifecycleCallback@646849e<br/>    Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.DetailActivity@169f395 in: RESUMED<br/>    running callback: android.support.test.rule.ActivityTestRule$LifecycleCallback@646849e<br/>    callback completes: android.support.test.rule.ActivityTestRule$LifecycleCallback@646849e<br/>D/EGL_emulation: eglMakeCurrent: 0xebe92000: ver 3 1 (tinfo 0xf69c0210)<br/>D/EGL_emulation: eglMakeCurrent: 0xebe92000: ver 3 1 (tinfo 0xf69c0210)<br/>D/EGL_emulation: eglMakeCurrent: 0xebe92000: ver 3 1 (tinfo 0xf69c0210)<br/>D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@f26e65f in: STOPPED<br/>    running callback: android.support.test.rule.ActivityTestRule$LifecycleCallback@646849e<br/>    callback completes: android.support.test.rule.ActivityTestRule$LifecycleCallback@646849e<br/></span>
+</li>
+<li class="text">
+<span class="stdout">I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=test}&#39; assertion on view with id: com.openclassrooms.entrevoisins:id/toolbar<br/></span>
+</li>
+<li class="text">
+<span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@f26e65f in: DESTROYED<br/>    running callback: android.support.test.rule.ActivityTestRule$LifecycleCallback@646849e<br/>    callback completes: android.support.test.rule.ActivityTestRule$LifecycleCallback@646849e<br/></span>
+</li>
+</ul>
 </li>
 <li class="level test">
 <span><em class="time">
-<div class="time">7 ms</div>
-</em><em class="status">passed</em>NeighbourServiceTest.getNeighboursWithSuccess</span>
+<div class="time">1.24 s</div>
+</em><em class="status">passed</em>DetailScreenWork</span>
+<ul>
+<li class="text">
+<span class="stdout">I/TestRunner: started: DetailScreenWork(com.openclassrooms.entrevoisins.neighbour_list.NeighboursListTest)<br/>I/MonitoringInstr: Activities that are still in CREATED to STOPPED: 0<br/></span>
 </li>
-<li class="level test">
-<span><em class="time">
-<div class="time">0 ms</div>
-</em><em class="status">passed</em>NeighbourServiceTest.deleteFavoriteNeighbourWithSuccess</span>
+<li class="text">
+<span class="stdout">W/ActivityTestRule: getActivityIntent() returned null using default: Intent(Intent.ACTION_MAIN)<br/>W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@305da2a<br/></span>
+</li>
+<li class="text">
+<span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@872e01b in: PRE_ON_CREATE<br/>D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@872e01b in: CREATED<br/>D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@872e01b in: STARTED<br/>    Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@872e01b in: RESUMED<br/>D/EGL_emulation: eglMakeCurrent: 0xebe92000: ver 3 1 (tinfo 0xf69c0210)<br/></span>
+</li>
+<li class="text">
+<span class="stdout">W/ms.entrevoisin: Accessing hidden method Lsun/misc/Unsafe;-&gt;compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)<br/></span>
+</li>
+<li class="text">
+<span class="stdout">I/ViewInteraction: Performing &#39;actionOnItemAtPosition performing ViewAction: single click on item at position: 0&#39; action on view (with id: com.openclassrooms.entrevoisins:id/list_neighbours and has parent matching: with id: com.openclassrooms.entrevoisins:id/container)<br/></span>
+</li>
+<li class="text">
+<span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@872e01b in: PAUSED<br/>    running callback: android.support.test.rule.ActivityTestRule$LifecycleCallback@f147dd2<br/>    callback completes: android.support.test.rule.ActivityTestRule$LifecycleCallback@f147dd2<br/></span>
+</li>
+<li class="text">
+<span class="stdout">W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@c7bbea3<br/></span>
+</li>
+<li class="text">
+<span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.DetailActivity@9d805a0 in: PRE_ON_CREATE<br/>    running callback: android.support.test.rule.ActivityTestRule$LifecycleCallback@f147dd2<br/>    callback completes: android.support.test.rule.ActivityTestRule$LifecycleCallback@f147dd2<br/>D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.DetailActivity@9d805a0 in: CREATED<br/>    running callback: android.support.test.rule.ActivityTestRule$LifecycleCallback@f147dd2<br/>    callback completes: android.support.test.rule.ActivityTestRule$LifecycleCallback@f147dd2<br/>D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.DetailActivity@9d805a0 in: STARTED<br/>    running callback: android.support.test.rule.ActivityTestRule$LifecycleCallback@f147dd2<br/>    callback completes: android.support.test.rule.ActivityTestRule$LifecycleCallback@f147dd2<br/>D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.DetailActivity@9d805a0 in: RESUMED<br/>    running callback: android.support.test.rule.ActivityTestRule$LifecycleCallback@f147dd2<br/>    callback completes: android.support.test.rule.ActivityTestRule$LifecycleCallback@f147dd2<br/>D/EGL_emulation: eglMakeCurrent: 0xebe92000: ver 3 1 (tinfo 0xf69c0210)<br/>D/EGL_emulation: eglMakeCurrent: 0xebe92000: ver 3 1 (tinfo 0xf69c0210)<br/>D/EGL_emulation: eglMakeCurrent: 0xebe92000: ver 3 1 (tinfo 0xf69c0210)<br/>D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@872e01b in: STOPPED<br/>    running callback: android.support.test.rule.ActivityTestRule$LifecycleCallback@f147dd2<br/>    callback completes: android.support.test.rule.ActivityTestRule$LifecycleCallback@f147dd2<br/></span>
+</li>
+<li class="text">
+<span class="stdout">I/ViewInteraction: Checking &#39;MatchesViewAssertion{viewMatcher=with text: is &quot;À propos de moi&quot;}&#39; assertion on view with id: com.openclassrooms.entrevoisins:id/textView_detail_a_propos<br/></span>
+</li>
+<li class="text">
+<span class="stdout">D/LifecycleMonitor: Lifecycle status change: com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity@872e01b in: DESTROYED<br/>    running callback: android.support.test.rule.ActivityTestRule$LifecycleCallback@f147dd2<br/>    callback completes: android.support.test.rule.ActivityTestRule$LifecycleCallback@f147dd2<br/></span>
+</li>
+</ul>
+</li>
+</ul>
 </li>
 </ul>
 </div>
 </div>
 <div id="footer">
-<p>Generated by Android Studio on 01/04/20 13:22</p>
+<p>Generated by Android Studio on 08/04/20 19:20</p>
 </div>
 </body>
 </html>

@@ -1,13 +1,7 @@
 package com.openclassrooms.entrevoisins.service;
 
-import android.widget.TextView;
-
-import com.openclassrooms.entrevoisins.R;
 import com.openclassrooms.entrevoisins.di.DI;
 import com.openclassrooms.entrevoisins.model.Neighbour;
-import com.openclassrooms.entrevoisins.ui.neighbour_list.DetailActivity;
-import com.openclassrooms.entrevoisins.ui.neighbour_list.ListNeighbourActivity;
-import com.openclassrooms.entrevoisins.service.NeighbourApiService;
 
 import org.hamcrest.collection.IsIterableContainingInAnyOrder;
 import org.junit.Before;
@@ -16,7 +10,6 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 import java.util.List;
-import android.support.v7.app.AppCompatActivity;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertThat;
@@ -63,24 +56,7 @@ public class NeighbourServiceTest {
         assertNotNull(neighbour.getName());
 
     }
-    @Test
-    // Supprime bien un neighbour qui était dans la liste des favoris
-    public void deleteFavoriteNeighbourWithSuccess() {
 
-        service.setFavoriteNeighbours(0 , true);
-        Neighbour favoriteNeighbourToDelete = service.getNeighbours().get(0);
-        service.deleteFavorite(favoriteNeighbourToDelete);
-        assertFalse(service.getFavorites().contains(favoriteNeighbourToDelete));
-    }
-
-    @Test
-    // Test vérifiant qu'il n'y a que des favoris dans l'onglet favoris
-    public void onlyFavoritesInFavorite() {
-
-        Neighbour neighbour = service.getNeighbours().get(0);
-        assertFalse(service.getFavorites().contains(!(neighbour.isFavorite())));
-
-    }
 
     @Test
     // test vérifiant que l'on ajoute bien un neighbour avec la méthode addNeighbour()
